@@ -1,2 +1,2 @@
-# wordpress-plugin-boilerplate
+# Wordpress Plugin Boilerplate
 A WordPress plugin boilerplate
