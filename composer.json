@@ -8,7 +8,6 @@
             "email": "me@horttcore.de"
         }
     ],
-    "require": {},
     "autoload": {
         "psr-4": {
             "RalfHortt\\WordPressPluginBoilerplate\\": "src/"
@@ -16,5 +15,8 @@
         "files": [
             "inc/functions.php"
         ]
+    },
+    "require": {
+        "horttcore/wp-plugin": "^1.0"
     }
 }
