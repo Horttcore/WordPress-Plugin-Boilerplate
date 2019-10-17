@@ -1,0 +1,20 @@
+{
+    "name": "ralfhortt/wordpress-plugin-boilerplate",
+    "description": "A WordPress Plugin Boilerplate",
+    "type": "wp-plugin",
+    "authors": [
+        {
+            "name": "Ralf Hortt",
+            "email": "me@horttcore.de"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "RalfHortt\\WordPressPluginBoilerplate\\": "src/"
+        },
+        "files": [
+            "inc/functions.php"
+        ]
+    }
+}
