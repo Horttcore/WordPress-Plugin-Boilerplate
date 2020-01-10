@@ -7,14 +7,13 @@
  * Author URI:      https://horttcore.de
  * Text Domain:     wordpress-plugin-boilerplate
  * Domain Path:     /languages
- * Version:         1.0
+ * Version:         1.1
  *
  * @package         Horttcore/WordPressPluginBoilerplate
  */
 
 namespace RalfHortt\WordPressPluginBoilerplate;
 
-use RalfHortt\WordPressPluginBoilerplate\Service;
 use Horttcore\Plugin\PluginFactory;
 
 // ------------------------------------------------------------------------------
@@ -37,6 +36,5 @@ endif;
 // Bootstrap
 // ------------------------------------------------------------------------------
 PluginFactory::create()
-    ->addTranslation('wordpress-plugin-boilerplate', dirname(plugin_basename(__FILE__)).'/languages/')
-    ->addService(Service::class)
+    ->addService(Translator::class, 'wordpress-plugin-boilerplate', dirname(plugin_basename(__FILE__)).'/languages/')
     ->boot();

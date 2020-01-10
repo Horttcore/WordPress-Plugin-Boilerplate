@@ -17,6 +17,8 @@
         ]
     },
     "require": {
-        "horttcore/wp-plugin": "^1.0"
+        "ralfhortt/wp-plugin": "^2.0",
+        "ralfhortt/translator-service": "^1.0",
+        "ralfhortt/service-contracts": "^1.0"
     }
 }
